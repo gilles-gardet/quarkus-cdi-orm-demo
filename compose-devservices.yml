@@ -1,0 +1,17 @@
+services:
+  postgresql:
+    container_name: referential
+    image: postgres:17
+    restart: always
+    environment:
+      POSTGRES_DB: referential
+      POSTGRES_USER: gilles
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgresql-quarkus-data:/var/lib/postgresql/data/
+volumes:
+  postgresql-quarkus-data:
+    name: postgresql-quarkus-data
+    external: true
