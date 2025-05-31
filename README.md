@@ -1,5 +1,9 @@
 # quarkus-cdi-orm
 
+```shell
+curlie :8080/persons firstname==John -u gilles:password
+```
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
